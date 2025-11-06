@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import styles from './GitHubRepos.module.css';
+import styles from './githubReposCard.module.css';
 import { motion, useInView } from "motion/react";
 
 const GITHUB_USERNAME = 'lukaeawdev';
