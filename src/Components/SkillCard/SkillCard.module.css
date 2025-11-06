@@ -1,0 +1,21 @@
+.skillCard {
+    border: 1px solid var(--box-border-color);
+    background-color: var(--box-color);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    box-shadow: var(--skillsCard-box-shadow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+.skillCardIcon {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    }
+

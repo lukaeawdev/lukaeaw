@@ -1,0 +1,24 @@
+.aboutSection {
+  text-align: left;
+  margin: 200px;
+}
+
+
+#main {
+  margin: 0px;
+  font-size: 100px;
+}
+
+#about {
+  margin-top: 40px;
+  font-size: 18px;
+  color: var(--text-secondary);
+  margin-right: 500px;
+}
+
+#subtitle {
+  margin-top: -20px;
+  font-size: 24px;
+  color: var(--accent-color);
+  margin-left: 5px;
+}

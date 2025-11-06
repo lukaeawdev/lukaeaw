@@ -1,0 +1,64 @@
+.headerContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 20px 40px; 
+  box-sizing: border-box; 
+}
+
+.navList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.themeButtonContainer {
+  margin-left: auto;
+}
+
+.navItem a {
+  display: block;
+  padding: 10px;
+  background-color: var(--navItem-bg-color);
+  border: var(--navItem-border);
+  border-radius: 50%;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.navItem a:hover {
+  transform: scale(1.1);
+  background-color: var(--navItem-hover-bg-color);
+}
+
+.navItem img {
+  width: 30px; 
+  height: 30px;
+  display: block;
+}
+
+.themeToggleButton {
+  background: none;
+  border: none;
+  padding: 10px;
+  background-color: var(--navItem-bg-color);
+  border: var(--navItem-border);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.themeToggleButton:hover {
+  transform: scale(1.1);
+  background-color: var(--navItem-hover-bg-color);
+}
+
+.themeToggleButton img {
+  width: 30px; 
+  height: 30px;
+  display: block;
+}
