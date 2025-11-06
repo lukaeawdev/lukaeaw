@@ -1,0 +1,92 @@
+.reposSection {
+  padding: 50px 20px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.reposTitle {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.reposContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.repoCard {
+  background-color: var(--box-color);
+  border: 1px solid var(--box-border-color);
+  border-radius: 10px;
+  padding: 25px;
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.repoCard:hover {
+  transform: translateY(-5px);
+  background-color: var(--box-hover-color);
+}
+
+.repoName {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  word-break: break-all;
+  color: var(--text-primary);
+}
+
+.repoDescription {
+  margin: 0 0 20px 0;
+  color: var(--text-secondary);
+  flex-grow: 1;
+  font-size: 14px;
+}
+
+.repoMeta {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 14px;
+  color: var(--text-secondary);
+  flex-wrap: wrap;
+  margin-top: auto;
+  padding-top: 15px;
+  border-top: 1px solid var(--box-border-color);
+}
+
+.metaItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.metaIcon {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.loadingText,
+.errorText {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 18px;
+  padding: 50px 0;
+  color: var(--text-secondary);
+}
+
+.errorText {
+  color: #ff6b6b;
+}
+
+@media (max-width: 768px) {
+  .reposContainer {
+    grid-template-columns: 1fr;
+  }
+}
